@@ -31,3 +31,53 @@ body {
     text-wrap: balance;
   }
 }
+
+.homebar {
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(52, 160, 76);
+  text-size-adjust: 25%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 6%;
+  margin-bottom: 50px;
+  
+}
+
+.homebar button {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  border: none;
+  background: none;
+  color: black;
+  font-size: 25px;
+  
+}
+
+.homebar button:hover {
+  /* background-color: rgb(52, 160, 76); */
+  position: fixed;
+  color: aliceblue;
+  font-size: 250%;
+  cursor: pointer;
+ 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(52, 160, 76);
+  text-size-adjust: 25%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 6%;
+
+
+}
