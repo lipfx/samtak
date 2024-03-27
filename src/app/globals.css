@@ -89,7 +89,37 @@ body {
 }
 
 .welcomescreen {
-
+  display: grid;
+  font-size: 200%;
   width: 100%;
-  padding: 400px;
+  padding: 15%;
+  padding-bottom: 20%;
+}
+
+.productscreen {
+  display: grid;
+  width: 100%;
+  padding-bottom: 20%;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgb(53, 92, 129);
+  font-size: 200%;
+}
+
+.galleryscreen {
+  display: grid;
+  width: 100%;
+  padding-bottom: 20%;
+
+  background-color: rgb(203, 205, 207);
+
+}
+
+.contactscreen {
+  display: grid;
+  width: 100%;
+  padding-bottom: 4%;
+  background-color: rgb(117, 168, 83);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

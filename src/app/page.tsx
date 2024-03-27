@@ -27,6 +27,20 @@ export default function Home() {
 
 
       </div>
+      <menu className="productscreen">
+        <TabButton>OUR PRODUCTS</TabButton>
+        <TabButton>PRICING</TabButton>
+        <TabButton>DESIGN</TabButton>
+
+      </menu>
+
+      <div className="galleryscreen">
+        <p>GALLERY</p>
+      </div>
+      <div className="contactscreen">
+        <p>Contact us</p>
+      </div>
+
 
     </main>
   );
