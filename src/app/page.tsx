@@ -1,4 +1,8 @@
 import Image from "next/image";
+
+import { MARKET_NAMES } from './data.js';
+
+import Items from './components/Items.jsx';
 import TabButton from './components/TabButton';
 
 
@@ -20,13 +24,18 @@ export default function Home() {
       </div>
 
 
-      <div className="welcomescreen">
+      <div className='welcomescreen'>
 
-       <p> SAMTAK is leading web development company in Zagreb </p>
-       <p>Focused on complex javascript which our Team makes effortlessly and design that sparks eyes</p>
-
+        <Items 
+          title={MARKET_NAMES[0].title}
+          description={MARKET_NAMES[0].description}
+        />
+        <Items {...MARKET_NAMES[1]}/>  
+        <Items {...MARKET_NAMES[2]}/>
+        <Items {...MARKET_NAMES[3]}/>
 
       </div>
+      
       <menu className="productscreen">
         <TabButton>OUR PRODUCTS</TabButton>
         <TabButton>PRICING</TabButton>
