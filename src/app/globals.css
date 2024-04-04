@@ -92,8 +92,9 @@ body {
 
     top: 0;
     width: 100%;
-    background-color: rgb(98, 137, 214);
-
+    background-color: rgb(241, 241, 241);
+    align-items: center;
+    justify-content: center;
     height: 560px;
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Divided into 6 equal parts */
@@ -101,14 +102,6 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 5px;
 
-    align-items: center;
-    justify-content: center;
-
-  /* display: grid;
-  font-size: 200%;
-  width: 100%;
-  padding: 15%;
-  padding-bottom: 20%; */
 }
 
 .productscreen {
