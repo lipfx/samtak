@@ -48,9 +48,11 @@ export default function Home() {
 
       <div className="galleryscreen">
         <p>GALLERY</p>
+        <TabButton>CLICK TO SHOW</TabButton>
+
       </div>
       <div className="contactscreen">
-        <p>Contact us</p>
+        <p>Contact us: samtak@gmail.com</p>
       </div>
 
 
