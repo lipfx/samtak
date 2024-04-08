@@ -126,11 +126,12 @@ body {
 
 .contactscreen {
   display: grid;
+
   justify-content: center;
   align-items: center;
   width: 100%;
   padding-bottom: 4%;
   background-color: rgb(117, 168, 83);
-  display: flex;
   
 }
+
