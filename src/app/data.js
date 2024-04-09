@@ -5,6 +5,7 @@ export const MARKET_NAMES = [
         description: 'Black',
         cost: 'price on request',
         detail: 'size 12"',
+        available: 'On stock',
 
     },
     {
@@ -12,6 +13,8 @@ export const MARKET_NAMES = [
         description: 'Blue',
         detail: 'size 14"',
         cost: 'price on request',
+        available: 'On stock',
+
 
     },
 
@@ -20,6 +23,8 @@ export const MARKET_NAMES = [
         description: 'Red',
         detail: 'size 16"',
         cost: 'price on request',
+        available: 'On stock',
+
 
     },
 
@@ -28,6 +33,8 @@ export const MARKET_NAMES = [
         description: 'Green',
         detail: 'size 18"',
         cost: 'price on request',
+        available: 'Order online',
+
 
     },
 

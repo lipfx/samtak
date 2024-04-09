@@ -31,6 +31,7 @@ export default function Home() {
           description={MARKET_NAMES[0].description}
           detail={MARKET_NAMES[0].detail}
           cost={MARKET_NAMES[0].cost}
+          available={MARKET_NAMES[0].available}
 
         />
         <Items {...MARKET_NAMES[1]}/>  
