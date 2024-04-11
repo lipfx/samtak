@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { useState } from 'react';
+
 import { MARKET_NAMES } from './data.js';
 
 import Items from './components/Items.jsx';
@@ -7,6 +9,13 @@ import TabButton from './components/TabButton';
 
 
 export default function Home() {
+
+  const [ selectedTopic, setSelectedTopic ] = useState('Click');
+
+  function handleSelect(selectedButton: string) {
+    setSelectedTopic(selectedButton);
+  }
+
   return (
     <main>
 
@@ -14,13 +23,13 @@ export default function Home() {
         <menu className="homebar">
           
           <h1 className="logotextsize">SAMTAK</h1>
-          <TabButton>HOME</TabButton>
-          <TabButton>PRODUCTS</TabButton>
-          <TabButton>GALLERY</TabButton>
-          <TabButton>CONTACT</TabButton>
+          <TabButton onSelect={() => handleSelect('home')}>HOME</TabButton>
+          <TabButton onSelect={() => handleSelect('products')}>PRODUCTS</TabButton>
+          <TabButton onSelect={() => handleSelect('gallery')}>GALLERY</TabButton>
+          <TabButton onSelect={() => handleSelect('contact')}>CONTACT</TabButton>
 
         </menu>
-
+       
       </div>
 
 
@@ -41,16 +50,16 @@ export default function Home() {
       </div>
       
       <menu className="productscreen">
-        <TabButton>OUR PRODUCTS</TabButton>
+        {/* <TabButton>OUR PRODUCTS</TabButton>
         <TabButton>PRICING</TabButton>
-        <TabButton>DESIGN</TabButton>
+        <TabButton>DESIGN</TabButton> */}
 
       </menu>
 
       <div className="galleryscreen">
         <p>GALLERY</p>
         <p>test</p>
-        <TabButton>CLICK TO SHOW</TabButton>
+        {/* <TabButton>CLICK TO SHOW</TabButton> */}
 
       </div>
       <div className="contactscreen">
